@@ -19,7 +19,7 @@ RUN \
 WORKDIR /root/PAServer
 
 # Define default command.
-CMD ["./paserver -password="]
+CMD ["paserver -password="]
 
 # Expose ports.
 EXPOSE 22
