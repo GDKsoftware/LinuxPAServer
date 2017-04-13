@@ -22,5 +22,4 @@ WORKDIR /root/PAServer
 CMD ["/root/PAServer/paserver","-password="]
 
 # Expose ports.
-EXPOSE 22
 EXPOSE 64211
