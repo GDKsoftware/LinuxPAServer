@@ -9,7 +9,8 @@ RUN mkdir PAServer && \
 
 ADD LinuxPAServer19.0.tar.gz /root/LinuxPAServer19.0.tar.gz
 RUN \
-  tar xzvf LinuxPAServer19.0.tar.gz \
+  cd /root && \
+  tar xzvf LinuxPAServer19.0.tar.gz && \
   cd PAServer19.0
 
 # Define mountable directories.
