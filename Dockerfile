@@ -4,20 +4,19 @@ RUN \
   apt-get update && \
   apt-get install -y tar gzip wget zip unzip zlib1g-dev curl
 
-RUN mkdir PAServer && \
-    mkdir PAServer/scratch-dir
-
-ADD LinuxPAServer19.0.tar.gz /root/LinuxPAServer19.0.tar.gz
+ADD LinuxPAServer19.0.tar.gz /root/
 RUN \
   cd /root && \
   tar xzvf LinuxPAServer19.0.tar.gz && \
-  cd PAServer19.0
+  mv PAServer19.0 PAServer && \
+  cd PAServer && \
+  mkdir scratch-dir
 
 # Define mountable directories.
 VOLUME []
 
 # Define working directory.
-WORKDIR /etc/nginx
+WORKDIR /root/PAServer
 
 # Define default command.
 CMD ["./paserver -password="]
