@@ -8,7 +8,7 @@ COPY LinuxPAServer19.0.tar.gz /root/LinuxPAServer19.0.tar.gz
 RUN \
   cd /root && \
   tar xzvf LinuxPAServer19.0.tar.gz && \
-  mv PAServer19.0 PAServer && \
+  mv PAServer-19.0 PAServer && \
   cd PAServer && \
   mkdir scratch-dir
 
