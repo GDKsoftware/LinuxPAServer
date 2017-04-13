@@ -7,7 +7,7 @@ RUN \
 RUN mkdir PAServer && \
     mkdir PAServer/scratch-dir
 
-ADD LinuxPAServer19.0.tar.gz
+ADD LinuxPAServer19.0.tar.gz /root/LinuxPAServer19.0.tar.gz
 RUN \
   tar xzvf LinuxPAServer19.0.tar.gz \
   cd PAServer19.0
