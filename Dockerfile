@@ -13,7 +13,7 @@ RUN \
   mkdir scratch-dir
 
 # Define mountable directories.
-VOLUME []
+# VOLUME []
 
 # Define working directory.
 WORKDIR /root/PAServer
