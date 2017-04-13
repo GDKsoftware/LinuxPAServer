@@ -4,7 +4,7 @@ RUN \
   apt-get update && \
   apt-get install -y tar gzip wget zip unzip zlib1g-dev curl
 
-ADD LinuxPAServer19.0.tar.gz /root/
+COPY LinuxPAServer19.0.tar.gz /root/LinuxPAServer19.0.tar.gz
 RUN \
   cd /root && \
   tar xzvf LinuxPAServer19.0.tar.gz && \
